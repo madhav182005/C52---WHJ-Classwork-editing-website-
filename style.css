@@ -1,0 +1,44 @@
+h1 {color:red; animation: name 5s forwards; position: relative;
+}
+.header{display: flex; justify-content: space-between; align-items: center; position: relative;}
+.Games{display: flex; justify-content: space-between;
+animation: colour 5s infinite;
+background-color: aqua;}
+.header * {
+    border: solid;
+}
+@keyframes colour{
+    0% {background-color: red;}
+    25% {background-color: blue;}
+    50% {background-color: green;}
+    75% {background-color: orange;}
+    100% {background-color: grey;}
+}
+
+@keyframes name{
+    from {left: 0px;}
+    to {left: 800px;}
+}
+.menu a{
+    padding-left: 30px;
+}
+a:link{
+    color: pink; 
+}
+a:visited{
+    color: purple; 
+}
+.Item{
+    position: relative; 
+}
+.Item p{
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.Item:hover p{
+    opacity: 1;
+}
+.Item:hover img{
+    opacity: .33;
+}
